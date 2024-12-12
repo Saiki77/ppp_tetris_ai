@@ -34,7 +34,11 @@ The playback of a player can be initiated with the command:
 - Adds more complex mutation to increase genetic diversity. 
 - Adds a genetic diversity score which needs to stay above a specific number or the mutation rate will also increase. This makes sure that the population doesn't diverge into one set of genes. 
 - Adds tournament based selection for reproduction which takes 3 agents and only the best advances.
-- Adds two new weights, heighest stack and 4 deep wells 
+- Adds two new weights, heighest stack and 4 deep wells
+
+The advanced tetris algorithem managed to surpass the stagnation point of the simple tetris algorithem of 230 average and managed to achive an average of 412 after 64 generations. (Taking around 12 hours)
+
+
 
 
 Inspiration https://codemyroad.wordpress.com/2013/04/14/tetris-ai-the-near-perfect-player/
