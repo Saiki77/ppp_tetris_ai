@@ -36,7 +36,8 @@ The playback of a player can be initiated with the command:
 - Adds tournament based selection for reproduction which takes 3 agents and only the best advances.
 - Adds two new weights, heighest stack and 4 deep wells
 
-The advanced tetris algorithem managed to surpass the stagnation point of the simple tetris algorithem, which was an average of 230 line clears and managed to reach an average of 412 line clears after 64 generations. (Taking around 12 hours) During Training the highest fitness evaluation was 920 over the 10 attempts. 
+The advanced tetris algorithem managed to surpass the stagnation point of the simple tetris algorithem, which was an average of 230 line clears and managed to reach an average of 412 line clears after 64 generations. (Taking around 12 hours) 
+During Training the highest fitness evaluation was 920 over the 10 attempts. 
 
 
 
