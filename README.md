@@ -39,7 +39,11 @@ The playback of a player can be initiated with the command:
 The advanced tetris algorithem managed to surpass the stagnation point of the simple tetris algorithem, which was an average of 230 line clears and managed to reach an average of 412 line clears after 64 generations. (Taking around 12 hours) 
 During Training the highest fitness evaluation was 920 over the 10 attempts. 
 
+# Observations 
 
+Over multible iterations and versions the ai seamed to optimize the agreggate height weight towards ```0.0```, this happened on both the 4 and 6 weight versions. This makes sense as the performance of a single piecd is indipendent of the total stack height most of the time and would only change it by little if it wasn't. 
+
+At the same time the heighest and most important parameters seamed to be the bumbiness and holes, these factors directly influence how the next piece performs and are a significant risk factor when playing. Interestingly the line clear reward was a lot more flexible, hovering between ```0.5``` and ```4.5```
 
 
 Inspiration https://codemyroad.wordpress.com/2013/04/14/tetris-ai-the-near-perfect-player/
