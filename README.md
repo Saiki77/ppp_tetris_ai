@@ -1,5 +1,7 @@
 # ppp_tetris_ai
 
+# Simple tetris algorithem with 4 weights 
+
 This implementation of a Tetris Player uses the genetic algorithem to optimize a number of weights, which evaluate the optimal position for any given piece. Players are evaluated based on the average number of lines they cleared in a given number of playthroughs. 
 
 Screenshot during training: 
@@ -24,6 +26,15 @@ Currently there is no consideration of the next piece/s and other weights could 
 
 The playback of a player can be initiated with the command: 
 ```python3 tetris_ai.py --visualize --weights_file best_agent.json --phase 4```
+
+# Advanced tetris algorithem with 6 weights and more improvements 
+
+- This adds adaptive mutation rates which will increase the mutation rate gradually if the ai remains stagnant for a specified number of generation. 
+- Adds gradiant based exploration for elite specimen which will try to explore further, indipendent from the score to get out of local minima. 
+- Adds more complex mutation to increase genetic diversity. 
+- Adds a genetic diversity score which needs to stay above a specific number or the mutation rate will also increase. This makes sure that the population doesn't diverge into one set of genes. 
+- Adds tournament based selection for reproduction which takes 3 agents and only the best advances.
+- Adds two new weights, heighest stack and 4 deep wells 
 
 
 Inspiration https://codemyroad.wordpress.com/2013/04/14/tetris-ai-the-near-perfect-player/
