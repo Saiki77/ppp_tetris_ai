@@ -47,14 +47,16 @@ At the same time the heighest and most important parameters seamed to be the bum
 
 # Game implementation 
 
-<img width="594" alt="Untitled" src="https://github.com/user-attachments/assets/ebf8b024-c9b7-4e82-8dd5-e0cb570f981e" />
+<img width="594" alt="Untitled" src="https://github.com/user-attachments/assets/ebf8b024-c9b7-4e82-8dd5-e0cb570f981e" /> 
 The algorithem can play the game in a more fvisual style using the pygame library and a command like this: 
 
 python playtetris.py --play --weights 0.6743113139572464 0.0 4.664487829366196 0.9326869578657685 0.0 1.2950522791394365
 
 An implementation into online platforms like tetr.io is easily possible with the new play mode which returns a string of actions for any board state and piece combination. The only problem is that these websites have slightly differant strting positions creating a need to translate the spawning pieces. 
 
-<img width="234" alt="Screenshot 2024-12-12 at 17 03 14" src="https://github.com/user-attachments/assets/5b19470a-4467-4094-ad57-b91d8cea7d0f" />
+<img width="234" alt="Screenshot 2024-12-12 at 17 03 14" src="https://github.com/user-attachments/assets/5b19470a-4467-4094-ad57-b91d8cea7d0f" /> <img width="230" alt="Untitled" src="https://github.com/user-attachments/assets/c31b0bd2-4c41-4f12-a92c-6a3f9e3bcd9e" /> <img  alt="Untitled" src="https://github.com/user-attachments/assets/1d555bce-33ba-49af-987b-35bf24ec5198" width="315" height="300" />
+
+
 
 To get the current piece we make a screenshot of the area where the next piece is and use edge detection to isolate it from the background. Finally we compare it to our library of reference images and see if we find a match. This is 100 reliable due to the very clear distinction between the images. 
 
