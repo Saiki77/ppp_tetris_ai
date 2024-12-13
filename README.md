@@ -48,6 +48,7 @@ At the same time the heighest and most important parameters seamed to be the bum
 # Game implementation 
 
 <img width="594" alt="Untitled" src="https://github.com/user-attachments/assets/ebf8b024-c9b7-4e82-8dd5-e0cb570f981e" /> 
+
 The algorithem can play the game in a more fvisual style using the pygame library and a command like this: 
 
 python playtetris.py --play --weights 0.6743113139572464 0.0 4.664487829366196 0.9326869578657685 0.0 1.2950522791394365
